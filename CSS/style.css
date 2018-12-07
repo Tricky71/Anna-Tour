@@ -1,0 +1,358 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    color: #283136;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: no-wrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.navigation,
+.social,
+.header-phone,
+.purposes-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-top {
+    background-color: #fa8f4d;
+}
+
+.header-top .container {
+    display: flex;
+    align-items: center;
+}
+
+.navigation,
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+.header-navigation {
+    width: 500px;
+    margin-left: 170px;
+}
+
+.header-navigation a {
+    color: #000000;
+    padding: 5px 0;
+    margin-right: 50px;
+    text-transform: uppercase;
+}
+
+.header-navigation a:hover,
+.header-navigation a:focus {
+    color: #ffffff;
+}
+
+.logo {
+    display: block;
+    font-family: 'Amatic SC', Arial, cursive;
+    font-size: 50px;
+    color: #ffffff;
+    line-height: 55px;
+}
+
+.logo span {
+    display: block;
+    font-family: 'Comfortaa', Arial, cursive;
+    font-size: 50px;
+    color: #ffffff;
+    line-height: 55px;
+}
+
+.main-logo {
+    width: 300px;
+}
+
+.header-phone {
+    width: 300px;
+    text-align: right;
+    color: #ffffff;
+    margin-left: auto;
+}
+
+.promo {
+    width: 1350px;
+    margin: 0 auto;
+    height: 200px;
+    background-color:#ffffff;
+    color: #cccccc;
+    padding: 200px 0;
+    background-image: url("../IMG/bird-fon1.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 1350px;
+    position: relative;
+    margin-bottom: 20px;
+   
+}
+
+.promo::before,
+.promo::after {
+    content:"";
+    width: 45%;
+    height: 30px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 18px;
+    box-shadow: 0 15px 10px #555555;
+    z-index: -1;
+    
+}
+
+.promo::before {
+    left: 15px;
+    transform: rotate(-3deg);
+}
+
+.promo::after {
+    right: 15px;
+    transform: rotate(3deg);
+}
+.promo span {
+    display: block;
+    width: 500px;
+    font-family: 'Amatic SC', Arial, cursive;
+    font-size: 80px;
+    line-height:90px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-left: auto;
+    animation: slide  1.5s ease;
+    animation-fill-mode: forwards;
+    
+    
+}
+
+@keyframes slide {
+    0% {transform: translateX(500px);}
+    100% {transform: translateX(0);}
+
+}
+
+.about {
+    background-color: #ffffff;
+    padding: 50px 0;
+    
+}
+
+.about .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-text{
+    width: 900px;
+    text-align: left;
+    padding: 30px 0;
+}
+
+.about-text span {
+    font-size: 30px;
+    line-height: 40px;
+    
+}
+
+.purposes {
+    background-color: #5e8b6f;
+    padding: 30px 0;
+    /* margin-bottom: 10px; */
+}
+
+.purposes h2 {
+    color:#ffffff;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.purposes-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.purposes-item {
+    width: 600px;
+    height: 300px;
+    /* border: 1px solid #000000; */
+    background: lightgrey;
+    background-position: 0 0;
+    background-size: 600px 300px;
+    overflow: hidden; 
+    margin-bottom: 50px;
+    
+}
+
+
+
+
+
+.rest {
+    background-image: url("../IMG/the-maldives-paradise-pool-chaise-ocean-sunset-romance.jpg");
+}
+
+.care {
+    background-image: url("../IMG/buddha.jpg");
+}
+
+.impressions {
+    background-image: url("../IMG/rim.jpg");
+}
+
+.business {
+    background-image: url("../IMG/hong.jpg");
+}
+
+.slide-link {
+    display: inline-block;
+    margin-left: auto;
+    color: #f87829;
+    text-transform: uppercase;
+}
+
+.slide-link:hover,
+.slide-link:focus {
+    color: lightgrey;
+}
+
+.purposes-item:hover .purposes-info {
+    animation: rise 0.6s linear ;
+    animation-fill-mode: forwards;
+}
+
+.purposes-item:hover .slide-link {
+    animation: slide 1s linear ;
+    animation-fill-mode: forwards;
+}
+
+.purposes-info {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    margin-top: 250px;
+    z-index:-10;
+}
+
+.purposes-info h3 {
+    font-family: 'Amatic SC', Arial, cursive;
+    color: #fa8f4d;
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@keyframes rise {
+    /*0% {transform: translateY(0);}
+    70% {transform: translateY(-120px);}
+    90% {transform: translateY(-190px);}*/
+    100% {transform: translateY(-250px);}
+}
+
+@keyframes slide {
+    0% {transform: translateX(600px);}
+    /*70% {transform: translateX(400px);}
+    90% {transform: translateX(200px);}*/
+    100% {transform: translateX(0px);}
+}
+
+.purposes h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.map-contacts {
+    width: 1350px;
+    height: 350px;
+    margin: 0 auto;
+    background-color: lightgrey;
+    position: relative;
+    /* margin-bottom: 10px; */
+}
+
+.map-adress {
+    width: 300px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 30px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    text-align: center;
+}
+
+.map-adress p,
+.map-adress h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.map-adress p {
+    margin-bottom: 20px;
+}
+
+.write-us {
+    width: 100%;
+    padding: 15px 10px;
+    background-color: #fa8f4d;
+    color: #ffffff;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.write-us:hover,
+.write-us:focus {
+    background-color: #f87829;
+}
+
+.footer-other {
+    background-color: #f87829;
+    padding: 30px 0;
+}
+
+.footer-other .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-social {
+    margin-left: auto;
+}
+
+
